@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   width: 620px;
   margin: 0 auto;
-  list-style-type: none;
 }
 
 .playing-area__item {
@@ -15,7 +14,16 @@
   border-radius: 5px;
 }
 
-.playing-area__img {
-  width: 124px;
-  height: 124px;
+
+.counter {
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+  margin: auto;
+}
+
+.activeBlock {
+  background-image: url('https://github.com/netology-code/ahj-homeworks/blob/simplification/dom/pic/goblin.png?raw=true');
+  background-position: center;
+  background-size: contain;
 }

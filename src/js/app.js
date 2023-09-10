@@ -1,7 +1,11 @@
-import PlayingArea from './playing-area/playing-area';
+import GameLogic from '../js/playing-area/playing-area';
 
-document.addEventListener('DOMContentLoaded', () => {
-  const playingArea = new PlayingArea(document.querySelector('.playing-area'));
+const app = new GameLogic();
 
-  setInterval(playingArea.randomMovingGoblin, 1000);
-})
+app.renderField();
+
+app.renderCounter();
+
+setInterval(() => app.activateBlock(app.playingArea), 1500);
+
+app.click(app.playingArea);
